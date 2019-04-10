@@ -34,6 +34,7 @@ class ConfigurationViewController: UIViewController{
         wojewodztwoPickerHandler.setPickerStrings(pickerStrings: wojewodztwa)
         wojewodztwoPickerHandler.isOnChangeEnabled = true
         
+        miastoPickerHandler.setPickerStrings(pickerStrings: getCitiesFromState(state: wojewodztwa[0]))
     }
     
     public func updateCitiesPickerStrings(state: String){

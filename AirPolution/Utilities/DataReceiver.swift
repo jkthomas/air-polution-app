@@ -9,7 +9,7 @@
 import Foundation
 
 class DataReceiver {
-    
+    let parser = PollutionDataParser()
     var urlStr = String()
     var body = String()
     
@@ -36,7 +36,11 @@ class DataReceiver {
                 if let jsonData = urlContent.data(using: 4){
                     let decoder = JSONDecoder()
                     let response = try! decoder.decode(StatusDto.self, from: jsonData)
-                    self.body = response.data.current!.pollution!.mainus as String
+                    if(response.status == "success"){
+                        self.body = self.parser.parseApiRequest(response: response)
+                    } else {
+                        self.body = "Wystapil problem przy pobieraniu danych z zewnetrznej aplikacji..."
+                    }
                 }
                 else{
                     //ERROR

@@ -21,6 +21,7 @@
 		06AB354A2254D25C00554999 /* WeatherDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB35492254D25C00554999 /* WeatherDto.swift */; };
 		06AB354C2254D26C00554999 /* PollutionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB354B2254D26C00554999 /* PollutionDto.swift */; };
 		06D3654D225DF15600B8FCC0 /* StatusDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654C225DF15600B8FCC0 /* StatusDto.swift */; };
+		06D3654F225E069500B8FCC0 /* PollutionDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */; };
 		06EDFB8C22426065002DEA54 /* ApiCallBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		06AB35492254D25C00554999 /* WeatherDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDto.swift; sourceTree = "<group>"; };
 		06AB354B2254D26C00554999 /* PollutionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDto.swift; sourceTree = "<group>"; };
 		06D3654C225DF15600B8FCC0 /* StatusDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDto.swift; sourceTree = "<group>"; };
+		06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDataParser.swift; sourceTree = "<group>"; };
 		06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		06208BCC223923120018741F /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				06208BB222390A860018741F /* InstructionsViewController.swift in Sources */,
 				06208BB022390A860018741F /* AppDelegate.swift in Sources */,
+				06D3654F225E069500B8FCC0 /* PollutionDataParser.swift in Sources */,
 				06AB35482254D1FF00554999 /* CurrentDto.swift in Sources */,
 				06208BC422390E090018741F /* ReceivedDataViewController.swift in Sources */,
 				06208BC222390D880018741F /* ConfigurationViewController.swift in Sources */,
