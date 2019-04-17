@@ -21,6 +21,7 @@
 		06AB354A2254D25C00554999 /* WeatherDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB35492254D25C00554999 /* WeatherDto.swift */; };
 		06AB354C2254D26C00554999 /* PollutionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB354B2254D26C00554999 /* PollutionDto.swift */; };
 		06D2155922673C7A0078AE58 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D2155822673C7A0078AE58 /* NavigationViewController.swift */; };
+		06D2155C226745690078AE58 /* ConcetrationInfoDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D2155B226745690078AE58 /* ConcetrationInfoDto.swift */; };
 		06D3654D225DF15600B8FCC0 /* StatusDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654C225DF15600B8FCC0 /* StatusDto.swift */; };
 		06D3654F225E069500B8FCC0 /* PollutionDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */; };
 		06EDFB8C22426065002DEA54 /* ApiCallBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */; };
@@ -43,6 +44,7 @@
 		06AB35492254D25C00554999 /* WeatherDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDto.swift; sourceTree = "<group>"; };
 		06AB354B2254D26C00554999 /* PollutionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDto.swift; sourceTree = "<group>"; };
 		06D2155822673C7A0078AE58 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = ../NavigationViewController.swift; sourceTree = "<group>"; };
+		06D2155B226745690078AE58 /* ConcetrationInfoDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcetrationInfoDto.swift; sourceTree = "<group>"; };
 		06D3654C225DF15600B8FCC0 /* StatusDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDto.swift; sourceTree = "<group>"; };
 		06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDataParser.swift; sourceTree = "<group>"; };
 		06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallBuilder.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		06208BCD223926CA0018741F /* Dto */ = {
 			isa = PBXGroup;
 			children = (
+				06D2155A226745320078AE58 /* Optional */,
 				06AB35452254D04200554999 /* DataDto.swift */,
 				06AB35472254D1FF00554999 /* CurrentDto.swift */,
 				06AB35492254D25C00554999 /* WeatherDto.swift */,
@@ -146,6 +149,14 @@
 				06208BCD223926CA0018741F /* Dto */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		06D2155A226745320078AE58 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				06D2155B226745690078AE58 /* ConcetrationInfoDto.swift */,
+			);
+			path = Optional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				06AB35482254D1FF00554999 /* CurrentDto.swift in Sources */,
 				06208BC422390E090018741F /* ReceivedDataViewController.swift in Sources */,
 				06208BC222390D880018741F /* ConfigurationViewController.swift in Sources */,
+				06D2155C226745690078AE58 /* ConcetrationInfoDto.swift in Sources */,
 				06AB354C2254D26C00554999 /* PollutionDto.swift in Sources */,
 				06EDFB8C22426065002DEA54 /* ApiCallBuilder.swift in Sources */,
 				06208BCA2239223A0018741F /* DataReceiver.swift in Sources */,

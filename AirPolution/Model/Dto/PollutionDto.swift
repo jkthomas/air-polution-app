@@ -12,4 +12,10 @@ public struct PollutionDto  : Codable {
     public let ts: String!
     public let aquis: Int!
     public let mainus: String!
+    public let p2: ConcetrationInfoDto!
+    public let p1: ConcetrationInfoDto!
+    public let o3: ConcetrationInfoDto!
+    public let n2: ConcetrationInfoDto!
+    public let s2: ConcetrationInfoDto!
+    public let co: ConcetrationInfoDto!
 }
