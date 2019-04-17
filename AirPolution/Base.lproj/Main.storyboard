@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dgF-0f-vDp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,28 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-IU-mAs">
-                                <rect key="frame" x="92" y="574" width="190" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.586192837220609" green="0.83110656067182376" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Dalej">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dbT-Hv-UqT" kind="presentation" modalTransitionStyle="crossDissolve" id="j5h-BL-3B6"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testowe instrukcje uzytkowania programu. Kliknij przycisk dalej." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APZ-2B-bqA">
-                                <rect key="frame" x="16" y="20" width="343" height="455"/>
+                                <rect key="frame" x="16" y="76" width="343" height="399"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autorzy: Kamil D Tomasz J" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tz-8W-DF3">
-                                <rect key="frame" x="16" y="483" width="343" height="66"/>
+                                <rect key="frame" x="16" y="502" width="343" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -49,10 +36,17 @@
                         <color key="backgroundColor" red="0.75202199479235832" green="1" blue="0.95631235681786975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tzy-Jw-x7k">
+                        <barButtonItem key="rightBarButtonItem" title="Dalej" id="bH2-eh-C3U">
+                            <connections>
+                                <segue destination="bNG-8d-kjI" kind="show" id="1zz-TJ-TwM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1072.8" y="131.78410794602701"/>
         </scene>
         <!--Configuration View Controller-->
         <scene sceneID="1q1-KI-FEo">
@@ -62,20 +56,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcI-Cb-axU">
-                                <rect key="frame" x="92" y="574" width="190" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.97676592326000988" blue="0.37433236343072041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Dalej">
-                                    <color key="titleColor" red="1" green="0.75569982759999998" blue="0.2185928942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="awb-li-3Z9" kind="presentation" modalTransitionStyle="crossDissolve" id="pR2-gn-DpN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wojewodztwo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8T-b5-FaW">
                                 <rect key="frame" x="22" y="141" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,6 +96,18 @@
                         <color key="backgroundColor" red="1" green="0.97993584549872159" blue="0.63841190568662687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3uI-EL-LSr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LNb-ez-QlC">
+                        <barButtonItem key="leftBarButtonItem" title="Wstecz" id="byI-fG-QBF">
+                            <connections>
+                                <segue destination="dgF-0f-vDp" kind="show" id="SLz-DW-sdK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Dalej" id="nBr-Av-zYD">
+                            <connections>
+                                <segue destination="QW9-Sj-SwN" kind="show" id="dLC-qV-Xjl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="miastoPicker" destination="W8e-pc-Ibq" id="OIx-tA-7JL"/>
                         <outlet property="wojewodztwoPicker" destination="251-H8-7ii" id="v2V-Lj-JNP"/>
@@ -123,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrk-Fy-f4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="131.78410794602701"/>
+            <point key="canvasLocation" x="2732" y="131.78410794602701"/>
         </scene>
         <!--Received Data View Controller-->
         <scene sceneID="58Y-nq-M9W">
@@ -133,22 +125,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iju-e4-fPb">
-                                <rect key="frame" x="92" y="574" width="190" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90744880487719348" green="0.70062719194311684" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.97246862496669251" green="0.43757848219682793" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="NdI-Ka-mRG"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-bs-QwA" userLabel="data">
-                                <rect key="frame" x="16" y="20" width="343" height="529"/>
+                                <rect key="frame" x="16" y="84" width="343" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="data" label="data"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -159,13 +137,77 @@
                         <color key="backgroundColor" red="1" green="0.81119099806609651" blue="0.9698510021569472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Aum-5W-lXQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="q76-4h-s9k">
+                        <barButtonItem key="leftBarButtonItem" title="Wstecz" id="rLQ-Uk-084">
+                            <connections>
+                                <segue destination="bNG-8d-kjI" kind="show" id="e96-AI-BJz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="dataLabel" destination="9Jf-bs-QwA" id="llz-Ya-Eaw"/>
+                        <outlet property="dataLabel" destination="9Jf-bs-QwA" id="bu4-iU-9cm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCR-kJ-vH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552.8" y="131.78410794602701"/>
+            <point key="canvasLocation" x="4370.3999999999996" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Gd-xO-Utm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dgF-0f-vDp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jxP-9g-sIk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PjE-Ro-g2K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRR-y5-4sQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J8H-u3-9GG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bNG-8d-kjI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zzY-3t-r5L">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dbT-Hv-UqT" kind="relationship" relationship="rootViewController" id="kCM-eT-wrg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rN0-za-6qY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="jgl-dk-WcK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QW9-Sj-SwN" customClass="NavigationViewController" customModule="AirPolution" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mmr-ww-rNj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="awb-li-3Z9" kind="relationship" relationship="rootViewController" id="hVX-ci-7Y7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sln-nQ-pKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3431.1999999999998" y="131.78410794602701"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="e96-AI-BJz"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -20,6 +20,7 @@
 		06AB35482254D1FF00554999 /* CurrentDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB35472254D1FF00554999 /* CurrentDto.swift */; };
 		06AB354A2254D25C00554999 /* WeatherDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB35492254D25C00554999 /* WeatherDto.swift */; };
 		06AB354C2254D26C00554999 /* PollutionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB354B2254D26C00554999 /* PollutionDto.swift */; };
+		06D2155922673C7A0078AE58 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D2155822673C7A0078AE58 /* NavigationViewController.swift */; };
 		06D3654D225DF15600B8FCC0 /* StatusDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654C225DF15600B8FCC0 /* StatusDto.swift */; };
 		06D3654F225E069500B8FCC0 /* PollutionDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */; };
 		06EDFB8C22426065002DEA54 /* ApiCallBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */; };
@@ -41,6 +42,7 @@
 		06AB35472254D1FF00554999 /* CurrentDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDto.swift; sourceTree = "<group>"; };
 		06AB35492254D25C00554999 /* WeatherDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDto.swift; sourceTree = "<group>"; };
 		06AB354B2254D26C00554999 /* PollutionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDto.swift; sourceTree = "<group>"; };
+		06D2155822673C7A0078AE58 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = ../NavigationViewController.swift; sourceTree = "<group>"; };
 		06D3654C225DF15600B8FCC0 /* StatusDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDto.swift; sourceTree = "<group>"; };
 		06D3654E225E069500B8FCC0 /* PollutionDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionDataParser.swift; sourceTree = "<group>"; };
 		06EDFB8B22426065002DEA54 /* ApiCallBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallBuilder.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				06208BC8223921F70018741F /* Utilities */,
 				06208BC522391D0C0018741F /* View */,
 				06208BAF22390A860018741F /* AppDelegate.swift */,
+				06D2155822673C7A0078AE58 /* NavigationViewController.swift */,
 				06208BB122390A860018741F /* InstructionsViewController.swift */,
 				06208BC122390D880018741F /* ConfigurationViewController.swift */,
 				06208BC322390E090018741F /* ReceivedDataViewController.swift */,
@@ -228,6 +231,7 @@
 				06208BC722391D270018741F /* PickerHandler.swift in Sources */,
 				06D3654D225DF15600B8FCC0 /* StatusDto.swift in Sources */,
 				06AB354A2254D25C00554999 /* WeatherDto.swift in Sources */,
+				06D2155922673C7A0078AE58 /* NavigationViewController.swift in Sources */,
 				06AB35462254D04200554999 /* DataDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

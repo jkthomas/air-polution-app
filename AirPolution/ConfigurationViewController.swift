@@ -20,9 +20,13 @@ class ConfigurationViewController: UIViewController{
                        "Mazowieckie", "Opolskie", "Podlaskie", "Pomorskie", "Śląskie", "Podkarpackie", "Świętokrzyskie", "Warmińsko-Mazurskie", "Zachodniopomorskie"]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dataViewController = segue.destination as! ReceivedDataViewController
-        dataViewController.state = wojewodztwoPickerHandler.value
-        dataViewController.city = miastoPickerHandler.value
+        let uiButton = sender as! UIBarButtonItem
+        if(uiButton.title == "Dalej"){
+            let navController = segue.destination as! NavigationViewController
+            let receivedViewController = navController.viewControllers.first as! ReceivedDataViewController
+            receivedViewController.state = wojewodztwoPickerHandler.value
+            receivedViewController.city = miastoPickerHandler.value
+        }
     }
     
     override func viewDidLoad() {

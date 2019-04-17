@@ -11,6 +11,7 @@ import UIKit
 class ReceivedDataViewController: UIViewController {
     
     @IBOutlet weak var dataLabel: UILabel!
+    
     var state = String()
     var city = String()
 
