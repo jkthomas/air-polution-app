@@ -10,7 +10,7 @@ import Foundation
 
 public struct PollutionDto  : Codable {
     public let ts: String!
-    public let aquis: Int!
+    public let aqius: Int!
     public let mainus: String!
     public let p2: ConcetrationInfoDto!
     public let p1: ConcetrationInfoDto!

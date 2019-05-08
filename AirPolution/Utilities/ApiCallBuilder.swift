@@ -26,7 +26,7 @@ class ApiCallBuilder{
     }
     
     public func build() -> String{
-        return server + "city=" + city + "&state=" + state + country + key
+        return server + "city=" + city.replacingOccurrences(of: " ", with: "%20") + "&state=" + state + country + key
     }
     
     private func setState(state: String){

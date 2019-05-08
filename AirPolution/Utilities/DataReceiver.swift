@@ -12,6 +12,7 @@ class DataReceiver {
     let parser = PollutionDataParser()
     var urlStr = String()
     var body = String()
+    var res: StatusDto? = nil
     
     init(url: String) {
         self.urlStr = url
@@ -21,7 +22,7 @@ class DataReceiver {
         self.urlStr = url
     }
     
-    func call(){
+    func call() {
         
         //"https://api.airvisual.com/v2/city?city=Wroclaw&state=Lower%20Silesia&country=Poland&key=bZYjJr9cgRteuwwB2"
         //dziala
@@ -37,7 +38,7 @@ class DataReceiver {
                     let decoder = JSONDecoder()
                     let response = try! decoder.decode(StatusDto.self, from: jsonData)
                     if(response.status == "success"){
-                        self.body = self.parser.parseApiRequest(response: response)
+                        self.res = response
                     } else {
                         self.body = "Wystapil problem przy pobieraniu danych z zewnetrznej aplikacji..."
                     }
